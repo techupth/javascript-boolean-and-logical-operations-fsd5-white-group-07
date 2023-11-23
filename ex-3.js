@@ -1,9 +1,16 @@
-//Exercise #3: Debugging (Boolean & Logical Operations)
-
-//Start coding here
-const numberA = 100;
+//สามารถตอบได้สองวิธีด้วยกันก็คือ
+// 1:
+let numberA = 100;
 const numberB = "20";
 
 numberA = 10;
 
-console.log(`Sum: ${numberA + numberB}`);
+console.log(`Sum: ${numberA + Number(numberB)}`);
+
+//หรือ
+// let numberA = 100;
+// const numberB = 20;
+
+// numberA = 10;
+
+// console.log(`Sum: ${numberA + Number(numberB)}`);
