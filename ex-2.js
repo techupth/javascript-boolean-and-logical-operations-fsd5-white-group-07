@@ -8,5 +8,16 @@ let hasAttendedDiscountEvent;
 let isPlatinum;
 
 let hasPromotion;
+lastMonthPaidMoreThan4000 = true;
+isWeekday = true;
+hasBoughtProductFromITCategory = false;
+hasAttendedDiscountEvent = true;
+isPlatinum = false;
+hasPromotion =
+  (lastMonthPaidMoreThan4000 &&
+    isWeekday &&
+    !hasBoughtProductFromITCategory &&
+    !hasAttendedDiscountEvent) ||
+  isPlatinum;
 
-console.log(hasPromotion);
+console.log(hasPromotion); // false John did not receive the promotion
